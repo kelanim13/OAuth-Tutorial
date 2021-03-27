@@ -23,8 +23,16 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class OAuthTutorialApplication extends WebSecurityConfigurerAdapter {
-		
-	/* @Bean
+	
+	
+	/* Tried completing the last section "generating a 401 in the server," but kept getting errors.
+	 * I know I am supposed to create a WebClient instance, but I don't believe that I did correctly
+	 * Each time I tried I was getting more errors
+	 * I looked at the source code for this tutorial, but I couldn't tell whether or not they created 
+	 * a WebClient instance 
+	
+	
+	@Bean
 	public WebClient rest(ClientRegistrationRepository clients, OAuth2AuthorizedClientRepository authz) {
 		
 	    ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2 =
